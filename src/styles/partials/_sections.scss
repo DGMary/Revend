@@ -1,0 +1,53 @@
+.section {
+  &-main {
+    padding: 60px 0;
+    .section {
+      &-title {
+        max-width: 1000px;
+      }
+      &-text {
+        max-width: 1000px;
+      }
+    }
+  }
+  &-title {
+    font-family: $ftMedium;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 16px;
+  }
+  &-text {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 170%;
+    color: $grey;
+  }
+  &-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (min-width: $md) {
+  .section-btns {
+    flex-direction: row;
+  }
+}
+
+@media(min-width: $xl) {
+  .section {
+    &-title {
+      font-size: 72px;
+      line-height: 89px;
+    }
+    &-text {
+      font-size: 20px;
+      margin-bottom: 32px;
+    }
+    &-main {
+      padding-top: 235px;
+    }
+  }
+}
