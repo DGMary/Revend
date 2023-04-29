@@ -30,6 +30,29 @@
   }
 }
 
+.video-holder {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: sticky;
+  top: 0;
+  position: relative;
+}
+.video-play-btn {
+  i {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid red;
+    background-size: contain;
+  }
+}
+
 @media (min-width: $md) {
   .section-btns {
     flex-direction: row;
@@ -48,6 +71,12 @@
     }
     &-main {
       padding-top: 235px;
+    }
+  }
+  .video-holder {
+    i {
+      width: 120px;
+      height: 120px;
     }
   }
 }

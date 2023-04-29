@@ -14,9 +14,14 @@ i[class^="icon-"] {
   }
   &-burger {
     background-image: url("../img/icons/burger.svg");
+    &-close {
+      background-image: url("../img/icons/burger-close.svg");
+    }
   }
   &-arrow {
     background-image: url("../img/icons/arrow-right.svg");
   }
+  &-play {
+    background-image: url("../img/icons/play.svg");
+  }
 }
-
