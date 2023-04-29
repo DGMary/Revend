@@ -1,4 +1,16 @@
 .section {
+  .section-content-holder {
+    padding: 60px 0;
+  }
+  & + .section {
+    .section-content-holder {
+      border-top: 2px solid $black;
+    }
+  }
+  .btn {
+    width: 100%;
+    max-width: 500px;
+  }
   &-main {
     padding: 60px 0;
     .section {
@@ -28,6 +40,47 @@
     flex-direction: column;
     gap: 16px;
   }
+  &-subtitle {
+    font-family: $ftMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 16px;
+  }
+  &-list {
+    font-family: $ftMedium;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      border-bottom: 1px solid $grey;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    a {
+      color: $black;
+      font-size: 26px;
+      line-height: 32px;
+      padding: 16px 0;
+      display: inline-flex;
+      width: 100%;
+    }
+  }
+  &-btn {
+    text-align: center;
+  }
+  &-projects {
+    padding-bottom: 60px;
+    .section-btn {
+      margin-bottom: 32px;
+    }
+    .section-content-holder {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .video-holder {
@@ -48,7 +101,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid red;
     background-size: contain;
   }
 }
@@ -61,6 +113,15 @@
 
 @media(min-width: $xl) {
   .section {
+    .section-content-holder {
+      padding: 100px 0;
+    }
+    .btn {
+      width: auto;
+    }
+    &-subtitle {
+      margin-top: 30px;
+    }
     &-title {
       font-size: 72px;
       line-height: 89px;
@@ -71,6 +132,48 @@
     }
     &-main {
       padding-top: 235px;
+    }
+    &-list {
+      a:hover {
+        padding-left: 12px;
+      }
+    }
+    &-content-holder {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 320px 1fr;
+    }
+    &-subtitle {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &-list {
+      a {
+        font-size: 32px;
+        line-height: 39px;
+      }
+    }
+    &-btn {
+      margin-top: 30px;
+    }
+    &-content-top {
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      gap: 20px;
+    }
+    &-projects {
+      padding-bottom: 100px;
+      .section-btn {
+        margin-top: 20px;
+      }
+      .section-content-holder {
+        padding-bottom: 0;
+      }
+    }
+    &-contacts {
+      .section-btn {
+        text-align: left;
+      }
     }
   }
   .video-holder {
