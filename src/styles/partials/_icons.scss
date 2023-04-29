@@ -5,12 +5,12 @@ i[class^="icon-"] {
   text-align: center;
   background-repeat: no-repeat;
   vertical-align: middle;  
+  width: 24px;
+  height: 24px;
 }
 .icon {
-  &-user {
-    // background-image: url("../img/icons/user.svg");
-    width: 24px;
-    height: 24px;
+  &-close {
+    background-image: url("../img/icons/close.svg");
   }
 }
 

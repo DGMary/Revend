@@ -1,12 +1,24 @@
 // Colors
 $white: #ffffff;
-$black: #26272C;;
+$black: #26272C;
+$greyLight: #C3C6CB;
+$grey: #828282;
 
 // Fonts
 $ftRegular: 'ClashDisplay-Regular', sans-serif;
 $ftMedium: 'ClashDisplay-Medium', sans-serif;
 
 $fontColor: $black;
+$fontColorSecondary: $grey;
 
 // Bg
-$bgFooter: $brown;
+$bgDark: $black;
+// $bgFooter: $brown;
+
+// Media 
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
