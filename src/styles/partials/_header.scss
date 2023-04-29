@@ -9,12 +9,9 @@
     border-bottom: 2px solid $black;
   }
 
-  &-logo {
-    width: 140px;
-    height: 20px;
-    display: flex;
-    a {
-      line-height: 1;
+  .logo {
+    svg {
+      fill: $black;
     }
   }
 
@@ -80,6 +77,13 @@
       z-index: 10;
     }
   }
+}
+
+.logo {
+  width: 140px;
+  height: 20px;
+  display: inline-flex;
+  line-height: 1;
 }
 
 @media(min-width: $xl) {

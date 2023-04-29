@@ -1,0 +1,108 @@
+.footer {
+  background-color: $bgFooter;
+  color: $white;
+  padding: 60px 0 24px;
+  a {
+    color: $white;
+    display: inline-flex;
+  }
+  address {
+    font-style: normal;
+  }
+  &-address {
+    color: $greyLight;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 60px;
+  }
+  &-middle {
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    flex-direction: column;
+    font-family: $ftRegular;
+    a {
+      margin-bottom: 24px;
+    }
+  }
+
+  &-top {
+    margin-bottom: 40px;
+    height: 20px;
+  }
+  &-address {
+    font-family: $ftRegular;
+  }
+  &-bottom {
+    font-size: 16px;
+    line-height: 24px;
+    color: $grey2;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li {
+      min-width: 76px;
+      margin-right: 42px;
+      margin-top: 16px;
+      font-size: 16px;
+      line-height: 19px;
+
+    }
+    a {
+      color: $grey1;
+    }
+  }
+
+  .logo {
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+@media(min-width: $xl) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    &-top {
+      margin-bottom: 69px;
+    }
+    &-middle {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+      font-size: 36px;
+      line-height: 44px;
+      a {
+        margin: 0 120px 0 0;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    &-address {
+      font-size: 26px;
+      line-height: 27px;
+      margin-bottom: 143px;
+    }
+    &-bottom {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      &-item {
+        width: auto;
+        &:first-child {
+          margin-right: auto;
+        }
+      }
+      li {
+        min-width: 20px;
+        margin: 0 0 0 32px;
+      }
+    }
+  }
+}

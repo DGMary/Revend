@@ -3,10 +3,14 @@ $white: #ffffff;
 $black: #26272C;
 $greyLight: #C3C6CB;
 $grey: #828282;
+$grey1: #9C9FA5;
+$grey2: #707070;
+
 
 // Fonts
 $ftRegular: 'ClashDisplay-Regular', sans-serif;
 $ftMedium: 'ClashDisplay-Medium', sans-serif;
+$ftInter: 'Inter', sans-serif;
 
 $fontColor: $black;
 $fontColorSecondary: $grey;
@@ -15,7 +19,7 @@ $burgerColor: $black;
 
 // Bg
 $bgDark: $black;
-// $bgFooter: $brown;
+$bgFooter: $bgDark;
 
 // Media 
 $xs: 0;
