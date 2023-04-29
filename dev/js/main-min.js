@@ -1,0 +1,1 @@
+const btnBurger=document.querySelector(".burger-button"),mainBody=document.querySelector(".body");btnBurger.addEventListener("click",function(){mainBody.classList.toggle("opened-menu")});

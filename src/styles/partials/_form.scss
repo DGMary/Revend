@@ -4,8 +4,34 @@ button {
   border: 0;
 }
 
-.btn-icon {
-  padding: 0;
-  width: 24px;
-  height: 24px;
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 14px 24px;
+
+  &-primary {
+    color: $white;
+    background-color: $black;
+    border-radius: 30px;
+    border: none;
+  }
+  
+  &-icon {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+}
+
+@media(min-width: $xl) {
+  .btn {
+    &-primary {
+      padding: 14px 32px;
+    }
+  }
 }

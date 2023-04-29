@@ -1,0 +1,24 @@
+.burger-button {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  
+  .icon-burger {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.opened-menu {
+  .icon-burger {
+    background-image: url("../../img/icons/burger-close.svg");
+  }
+}
+
+@media(min-width: $xl) {
+  .burger-button {
+    display: none;
+  }
+}
