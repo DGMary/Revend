@@ -1,0 +1,46 @@
+<div class="section section-team">
+  <div class="container">
+    <div class="section-content-holder">
+      <div class="section-subtitle">Team</div>
+      <div class="section-content">
+        <div class="section-title">Our professionals</div>
+        <div class="section-text">All members of our team have a decent level of knowledge and experience, which allows us to create high quality products and achieve success in our projects.</div>
+        <ul class="team-list">
+          <li class="team-item">
+            @@include('team-item.html', {
+              name: 'Vlad Musienko',
+              info: 'Founder / Chief Product Designer',
+              imgSrc: '../img/photo-01.jpg'
+            })
+          </li>
+          <li class="team-item">
+            @@include('team-item.html', {
+              name: 'Anastasia Musienko',
+              info: 'Co-founder / Art-director',
+              imgSrc: '../img/img-01.jpg'
+            })
+          </li>
+          <li class="team-item">
+            @@include('team-item.html', {
+              name: 'Alyona Kulish',
+              info: 'UX/UI Designer',
+              imgSrc: '../img/img-02.jpg'
+            })
+          </li>
+          <li class="team-item">
+            @@include('team-item.html', {
+              name: 'Diana Kalinushkina',
+              info: 'UI Designer',
+              imgSrc: '../img/img-03.jpg'
+            })
+          </li>
+        </ul>
+        <div class="section-btn">
+          @@include('btn-secondary.html', {
+            btnText: 'I want to join your team'
+          })
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

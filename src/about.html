@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('templates/head.html', {
-    "cssLink": "/css/content.css"
-    }
-  )
-  <body class="body">
-    @@include('templates/top-panel.html')
+  @@include('templates/head.html')
+  <body class="body about-page">
     @@include('templates/header.html')
     <main class="main">
-      <div class="content-section">
-        <div class="container">
-          <div class="content-holder">
-            About page
-          </div>
-        </div>
-      </div>
+      @@include('components/content/section-template.html', {
+        sectionName: 'About',
+        title: 'We team design, which base in Ukraine, but work with companies worldwide.',
+        text: 'We are proud that our team has rich experience in creating various products for companies of different sizes and directions. We specialize in the development of websites, mobile applications, SaaS, Dashboard, Trading, CRM, Blockchain, Cryptocurrency, E-commerce, Mobile App Design, NFT and other products that help our clients grow their business.',
+        textMore: 'We believe that each project is unique and requires an individual approach. Therefore, we are always ready to listen to the requirements of our customers and offer the best solutions that meet their business goals. Our products and websites are developed using modern technologies. We constantly update our knowledge and skills to keep up with the latest trends in web development and design. We are confident that our products and services will help our clients to stand out in the market and achieve their business goals.',
+        btn: true,
+      })
+      <!-- section video -->
+      @@include('components/content/section-team.html')
+      @@include('components/content/section-contacts.html')
     </main>
     @@include('templates/footer.html')
   </body>
