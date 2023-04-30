@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('templates/head.html', {
-    "cssLink": "/css/content.css"
-    }
-  )
-  <body class="body">
+  @@include('templates/head.html')
+  <body class="body market-page">
     @@include('templates/header.html')
     <main class="main">
-      <div class="content-section">
+      @@include('components/content/section-center.html', {
+          title: "Market",
+          text: "We also offer ready-made solutions that you can easily purchase and use in your projects. This will help you significantly reduce the time it takes to develop your own product and get your business to market faster"
+        }
+      )
+      <div class="section-product-list">
         <div class="container">
-          <div class="content-holder">
-            Market page
+          <div class="product-list product-list-sm">
+            @@include('components/content/product-item-sm.html', {
+              imgSrc: '../img/img-05.jpg',
+              imgSrcSm: '../img/img-01-sm.jpg',
+              title: 'PNSwap – token exchange platform',
+              price: '$ 49.00',
+            })
+            @@include('components/content/product-item-sm.html', {
+              imgSrc: '../img/img-06.jpg',
+              imgSrcSm: '../img/img-02-sm.jpg',
+              title: 'PNSwap – token exchange platform',
+              price: '$ 159.00',
+            })
+            @@include('components/content/product-item-sm.html', {
+              imgSrc: '../img/img-07.jpg',
+              imgSrcSm: '../img/img-03-sm.jpg',
+              title: 'PNSwap – token exchange platform',
+              price: '$ 159.00',
+            })
+            @@include('components/content/product-item-sm.html', {
+              imgSrc: '../img/img-08.jpg',
+              imgSrcSm: '../img/img-04-sm.jpg',
+              title: 'PNSwap – token exchange platform',
+              price: '$ 49.00',
+            })
+            @@include('components/content/product-item-sm.html', {
+              imgSrc: '../img/img-09.jpg',
+              imgSrcSm: '../img/img-05-sm.jpg',
+              title: 'PNSwap – token exchange platform',
+              price: '$ 159.00',
+            })
+            @@include('components/content/product-item-sm.html', {
+              imgSrc: '../img/img-05.jpg',
+              imgSrcSm: '../img/img-01-sm.jpg',
+              title: 'PNSwap – token exchange platform',
+              price: '$ 49.00',
+            })
           </div>
         </div>
       </div>
