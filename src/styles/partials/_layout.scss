@@ -24,14 +24,17 @@ body {
 
 a {
   text-decoration: none;
-  // color: $linkColor;
   transition: all .3s ease;
 
   &:hover {
-    // color: $linkHover;
-    opacity: .8;
+    opacity: .9;
   }
 }
+
+.link {
+  color: $linkColor;
+}
+
 
 .container {
   max-width: 100%;

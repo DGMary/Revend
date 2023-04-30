@@ -11,6 +11,9 @@ i[class^="icon-"] {
 .icon {
   &-close {
     background-image: url("../img/icons/close.svg");
+    &-dark {
+      background-image: url("../img/icons/close-dark.svg");
+    }
   }
   &-burger {
     background-image: url("../img/icons/burger.svg");
