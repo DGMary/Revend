@@ -46,7 +46,7 @@
       gap: 28px;
       grid-template-columns: repeat(2, 1fr);
       &-custom {
-        .product-list {
+        .product {
           &-item {
             grid-row: span 2;
             margin-bottom: 0;
@@ -109,6 +109,14 @@
     &-price {
       font-size: 26px;
       line-height: 31px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .product-img {
+    img {
+      width: 100%;
     }
   }
 }
