@@ -4,7 +4,8 @@ $(document).ready(function () {
   closeMobMenu();
   openMobMenu();
   closeTopPanel();
-  closeBottomPanel()
+  closeBottomPanel();   
+  $('#video') && playVideo();
 
 });
 
@@ -37,5 +38,14 @@ function closeBottomPanel() {
   $(document).on('click', '.js-close-info', function (e) {
     e.preventDefault();
     $bottomPanel.removeClass('is-active');
+  });
+}
+
+function playVideo() {
+  $(document).on('click', '.js-play', function (e) {
+    e.preventDefault();
+    $('#video').trigger('play');
+    $('.video-holder').addClass('video-play');
+    $('#video').attr("controls","controls");
   });
 }
