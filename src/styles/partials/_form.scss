@@ -14,8 +14,18 @@ button {
   align-items: center;
   justify-self: unset;
   justify-content: center;
-  i {
+  &-icon-holder {
     margin-left: 6px;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.3s ease-in-out;
+    }
   }
 
   &-primary {
@@ -27,7 +37,6 @@ button {
       border-color: $btnHoverColor;
     }
   }
-
   &-secondary {
     background-color: $white;
     color: $black;
@@ -37,8 +46,7 @@ button {
       border-color: $grey;
       color: $grey;
     }
-  }
-  
+  }  
   &-icon {
     padding: 0;
     width: 24px;
@@ -54,5 +62,10 @@ button {
   .btn {
     padding-left: 32px;
     padding-right: 32px; 
+    &-primary-icon:hover {
+      i {
+        left: 2px;
+      }
+    }
   }
 }

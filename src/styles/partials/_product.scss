@@ -15,6 +15,9 @@
     display: grid;
     grid-template-columns: 1fr 24px;
     gap: 16px;
+    i {
+      transition: 0.3s ease-in-out;
+    }
     &-title {
       font-weight: 500;
       font-size: 22px;
@@ -80,6 +83,9 @@
       img {
         transition: 0.3s ease-in-out;
         transform: scale(1.04);
+      }
+      .icon-top {
+        transform: rotate(45deg);
       }
     }
   }
