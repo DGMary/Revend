@@ -9,7 +9,7 @@
   }
   .btn {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
   }
   &-main {
     padding: 60px 0;
@@ -34,6 +34,12 @@
     font-size: 18px;
     line-height: 170%;
     color: $grey;
+    p {
+      margin: 0;
+      & + p {
+        margin-top: 16px;
+      }
+    }
   }
   &-btns {
     display: flex;
@@ -84,6 +90,11 @@
   &-center {
     .section-content {
       padding: 60px 0 8px;
+    }
+  }
+  &-contacts {
+    .section-title {
+      margin-bottom: 24px;
     }
   }
 }

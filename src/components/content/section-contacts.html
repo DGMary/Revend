@@ -3,9 +3,11 @@
     <div class="section-content-holder">
       <div class="section-subtitle">Contact</div>
       <div class="section-content">
-        <div class="section-title">Have a project in mind? Let’s get to work</div>
+        <div class="section-title">Have a project in mind?</br> Let’s get to work</div>
         <div class="section-btn">
-          <button class="btn btn-primary btn-primary-icon" type="button">Start new project <i class="icon-arrow"></i></button>
+          @@include('btn-primary-icon.html', {
+            btnText: 'Start new project'
+          })
         </div>
       </div>
     </div>

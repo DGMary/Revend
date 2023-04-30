@@ -1,0 +1,21 @@
+.cases-page {
+  .section-holder {
+    .section-content-holder {
+      padding-bottom: 12px;
+    }
+  }
+  .section-products {
+    padding-bottom: 60px;
+  }
+}
+
+@media(min-width: $xl) {
+  .cases-page {
+    .section-holder {
+      .section-content-holder {
+        padding-bottom: 0;
+        padding-top: 160px;
+      }
+    }
+  }
+}

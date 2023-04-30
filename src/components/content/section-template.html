@@ -1,0 +1,23 @@
+<div class="section section-holder">
+  <div class="container">
+    <div class="section-content-holder">
+      <div class="section-subtitle">@@sectionName</div>
+      <div class="section-content">
+        <div class="section-title">@@title</div>
+        <div class="section-text">
+          <p>@@text</p>
+          @@if (context.textMore) {
+            <p>@@textMore</p>
+          }
+        </div>
+        @@if (context.btn) {
+          <div class="section-btn">
+            @@include('btn-primary-icon.html', {
+              btnText: 'Start new project'
+            })
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>
