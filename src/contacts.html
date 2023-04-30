@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('templates/head.html', {
-    "cssLink": "/css/content.css"
-    }
-  )
+  @@include('templates/head.html')
   <body class="body">
     @@include('templates/header.html')
     <main class="main">
-      <div class="content-section">
-        <div class="container">
-          <div class="content-holder">
-            Contacts page
+      @@include('components/content/section-center.html', {
+        title: "Contact",
+        text: "We are always in touch and ready to help you at any time. Feel free to contact us if you have any questions or needs - we are happy to help and provide immediate feedback"
+      })
+    <div class="section-contacts">
+      <div class="container">
+        <div class="contacts-holder">
+          <div class="contacts-item">
+            <div class="contacts-item-title">Email</div>
+            <div class="contacts-item-text">
+              <a href="mailto:start@revend.group">start@revend.group</a>
+            </div>
+          </div>
+          <div class="contacts-item">
+            <div class="contacts-item-title">Address</div>
+            <div class="contacts-item-text">
+              <span>46 Nauki Ave., Kharkiv,  Ukraine 61072</span>
+            </div>
+          </div>
+          <div class="contacts-item">
+            <div class="contacts-item-title">Phone</div>
+            <div class="contacts-item-text">
+              <a href="tel:+38 0500123456">+38 050 012 34 56</a>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    
+    <div class="section">
+      <div class="container">
+        <div class="contacts-subtitle">We cooperate with companies from all over the world, including Japan, Thailand, London, France,  USA, Turkey, Israel, Cyprus, Kyiv and much more.</div>
+      </div>
+    </div>    
+    <div class="section-map">
+      <img src="../img/map-img.jpg" alt="Map">
+    </div>
     </main>
     @@include('templates/footer.html')
   </body>
