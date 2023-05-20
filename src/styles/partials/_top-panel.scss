@@ -4,6 +4,8 @@
   font-size: 14px;
   line-height: 17px;
   display: none;
+  position: relative;
+  z-index: 1;
   &.is-active {
     display: block
   }

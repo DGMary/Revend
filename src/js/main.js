@@ -6,7 +6,7 @@ $(document).ready(function () {
   closeTopPanel();
   closeBottomPanel();   
   $('#video') && playVideo();
-
+  AOS.init();
 });
 
 function closeMobMenu() {

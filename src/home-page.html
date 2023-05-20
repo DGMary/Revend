@@ -5,7 +5,18 @@
   @@include('templates/top-panel.html')
   @@include('templates/header.html')
   <main class="main">
-    @@include('components/content/section-main.html')
+    <div class="container"><div class="header-line"></div></div>
+    <div  
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center">
+      @@include('components/content/section-main.html')
+    </div>
     @@include('components/content/section-video.html')
     @@include('components/content/section-services.html')
     @@include('components/content/section-projects.html')
