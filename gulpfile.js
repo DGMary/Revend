@@ -13,11 +13,12 @@ var gulp = require('gulp'),
 
 var path = {
     build: {
-      html: 'dev/pages/',
-      json: 'dev/pages/',
+      html: 'dev/',
+      json: 'dev/',
       js: 'dev/js/',
       css: 'dev/css/',
       img: 'dev/img/',
+      video: 'dev/video/',
       fonts: 'dev/fonts/'
     },
     src: {
@@ -26,6 +27,7 @@ var path = {
       js: 'src/js/*.js',
       style: 'src/styles/*.scss',
       img: 'src/img/**/*.*',
+      video: 'src/video/**/*.*',
       fonts: 'src/fonts/**/*.*'
     },
     watch: {
@@ -34,6 +36,7 @@ var path = {
       js: 'src/js/**/*.js',
       style: 'src/styles/**/*.scss',
       img: 'src/img/**/*.*',
+      video: 'src/video/**/*.*',
       fonts: 'src/fonts/**/*.*'
   
     },
@@ -96,6 +99,12 @@ function img() {
     .pipe(gulp.dest(path.build.img));
 };
 
+
+function video() {
+  return gulp.src(path.src.video)
+    .pipe(gulp.dest(path.build.video));
+};
+
 function fonts() {
   return gulp.src(path.src.fonts)
     .pipe(gulp.dest(path.build.fonts))
@@ -112,6 +121,7 @@ function watch() {
   gulp.watch(path.src.json, json);
   gulp.watch(path.watch.js, js);
   gulp.watch(path.src.img, img);
+  gulp.watch(path.src.video, video);
   gulp.watch(path.src.fonts, fonts);
   gulp.watch(path.watch.style, styles);
 }
@@ -119,7 +129,7 @@ function watch() {
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
-var build = gulp.parallel(html, js, img, fonts, styles, watch);
+var build = gulp.parallel(html, js, img, video, fonts, styles, watch);
 
 /*
  * You can use CommonJS `exports` module notation to declare tasks
@@ -127,6 +137,7 @@ var build = gulp.parallel(html, js, img, fonts, styles, watch);
 exports.html = html;
 exports.js = js;
 exports.img = img;
+exports.video = video;
 exports.fonts = fonts;
 exports.styles = styles;
 exports.watch = watch;
