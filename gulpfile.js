@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     rigger = require('gulp-rigger'),
     minify = require('gulp-minify'),
-    cleanCss = require('gulp-clean-css'),
+    // cleanCss = require('gulp-clean-css'),
     prefixer = require('gulp-autoprefixer'),
     browserSync = require("browser-sync").create(),
     sourcemaps = require('gulp-sourcemaps');
@@ -88,7 +88,7 @@ function styles() {
       cascade: false
     }))
     .pipe(sourcemaps.write())
-    .pipe(cleanCss())
+    // .pipe(cleanCss())
     .pipe(plumber.stop())
     .pipe(gulp.dest(path.build.css))
     .pipe(browserSync.stream());
