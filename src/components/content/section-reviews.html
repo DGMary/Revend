@@ -1,0 +1,97 @@
+<div class="section section-reviews">
+  <div class="container">
+    <div class="section-content-holder full-width">
+      <div class="section-content">
+        <div class="section-title-holder">
+          <div class="section-title">What our clients say about us</div>
+          <div class="section-text xl-hiddin">Chances are you will be 100% satisfied with the result. 5.0 is our average.</div>
+          <div class="section-btn section-btn-align-left">
+            @@include('link-secondary-icon.html', {
+              btnText: 'More reviews',
+              class: 'btn-width-auto',
+            })
+          </div>
+        </div>
+        <div class="slider-container">
+          <div class="review-card-info">
+            <div class="card-info-title-holder">
+              <div class="card-info-title-container">
+                <div class="card-info-img">
+                  <img src="../../img/clutch.png" alt="Clutch Revend Group" width="102px" height="28px">
+                </div>
+                <div class="card-info-title">
+                  <span>5+ Reviews</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-info-content">
+              <div class="card-info-number">5.0</div>
+              <div class="review-card-text">
+                <span>Chances are you will be</span>
+                <span>100% satisfied with the</span>
+                <span>result. 5.0 is our average.</span> 
+              </div>
+            </div>
+            <div class="swiper-buttons-holder">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>  
+            </div>  
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                @@include('review-card-01.html')
+              </div>
+              <div class="swiper-slide">
+                @@include('review-card-01.html')
+              </div>
+              <div class="swiper-slide">
+                @@include('review-card-01.html')
+              </div>
+              <div class="swiper-slide">
+                @@include('review-card-01.html')
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>              
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script defer>
+  window.addEventListener('load', function() {
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1.22,
+      spaceBetween: 16,
+      direction: 'horizontal',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 16
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 16,
+        },
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        }
+      }
+    });
+  })
+</script>

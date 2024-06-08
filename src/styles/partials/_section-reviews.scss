@@ -1,0 +1,205 @@
+.section-reviews .section-text {
+  font-size: 20px;
+  line-height: 34px;
+}
+.section-reviews .section-title-holder {
+  margin-bottom: 24px;
+}
+.swiper {
+  width: 100%;
+}
+
+.review-card {
+  border: 1px solid #DBE1EA;
+  padding: 24px;
+  height: 393px;
+}
+.review-card-title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #DBE1EA;
+  margin-bottom: 24px;
+}
+
+.review-card-title .title-number {
+  font-size: 32px;
+  line-height: 44px;
+  margin-right: 4px;
+  display: inline-flex;
+}
+.star {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+}
+.star-list {
+  display: inline-flex;
+  align-content: center;
+}
+.review-card-text {
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 44px;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.review-card-company {
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 27px;
+}
+.review-card-author {
+  color: var(--grey);
+  font-size: 16px;
+  line-height: 20px;
+}
+.section-reviews .slider-container {
+  margin: 0 -16px;
+}
+.section-reviews .swiper-wrapper {
+  padding-left: 16px;
+}
+.section-reviews .swiper-buttons {
+  display: none;
+}
+.section-reviews .swiper {
+  padding-bottom: 52px;
+}
+.section-reviews .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  color: #F5F5F7;
+}
+.section-reviews .swiper-pagination-bullet-active {
+  background: #26272C;
+}
+.review-card-info {
+  display:  none;
+}
+.section-reviews .section-content-holder {
+  border-bottom: 2px solid #26272C;
+}
+@media(min-width: 768px) {
+  .section-reviews .swiper-wrapper {
+    padding: 0;
+  }
+  .section-reviews .slider-container {
+    margin: 0 auto;
+  }
+}
+@media(min-width: 1200px) {
+  .section-content-holder.full-width {
+    display: block;
+  }
+  .xl-hiddin {
+    display: none;
+  }
+  .section-reviews .section-title-holder {
+    display: flex;
+  }
+  .section-reviews .section-title {
+    max-width: 730px;
+    margin-right: auto;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  .section-reviews .section-title-holder {
+    margin-bottom: 60px;
+  }
+  .section-reviews .swiper {
+    padding-bottom: 0;
+  }
+  .section-reviews .swiper-pagination {
+    display: none;
+  }
+  .section-reviews .swiper-buttons {
+    display: block;
+  } 
+  .section-reviews .slider-container {
+    display: grid;
+    grid-template-columns: 433px 1fr;
+    gap: 20px;
+  }
+  .review-card {
+    height: 100%;
+    padding: 42px;
+  }
+  .review-card-info {
+    display: block;
+    border: 1px solid #DBE1EA;
+    padding: 42px;
+  }
+  .card-info-number {
+    font-size: 100px;
+    line-height: 120px;
+  }
+  .card-info-content .review-card-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  .card-info-title-container {
+    background-color: #F1F3F7;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    padding: 16px;
+  }
+  .card-info-img {
+    padding-right: 19px;
+    border-right: 1px solid #828282;  
+    margin-right: 19px;
+  }
+  .card-info-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .card-info-title-holder {
+    margin-bottom: 50px;
+  }
+  .section-reviews .section-btn {
+    margin-top: 46px;
+  }
+  .review-card-text {
+    font-size: 20px;
+    line-height: 34px;
+  }
+  .review-card-title {
+    margin-bottom: 31px;
+  }
+  .review-card-text {
+    margin-bottom: 43px;
+  }
+  .section-reviews .swiper-button-prev,
+  .section-reviews .swiper-button-next {
+    width: 49px;
+    height: 49px;
+    background-image: url(../../img/icons/slider-arrow.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .section-reviews .swiper-button-prev {
+    left: 0;
+  }
+  .section-reviews .swiper-button-next {
+    right: 0;
+    rotate: 180deg;
+  }
+  .section-reviews .swiper-button-next::after,
+  .section-reviews .swiper-button-prev::after {
+    content: none;
+  }
+  .swiper-buttons-holder {
+    display: block;
+    width: 114px;
+    height: 49px;
+    position: relative;
+    z-index: 1;
+  }
+}
