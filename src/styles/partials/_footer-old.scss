@@ -2,10 +2,6 @@
   background-color: $bgFooter;
   color: $white;
   padding: 60px 0 24px;
-  .logo {
-    width: 192px;
-    height: 22px;
-  }
   a {
     color: $white;
     display: inline-flex;
@@ -55,11 +51,13 @@
       margin-top: 16px;
       font-size: 16px;
       line-height: 19px;
+
     }
     a {
       color: $grey1;
     }
   }
+
   .logo {
     svg {
       fill: $white;
@@ -108,64 +106,4 @@
       }
     }
   }
-}
-
-// new styles 08.06.2024
-.footer .logo {
-  width: 192px;
-  height: 22px;
-}
-.footer-content {
-  border-top: 2px solid #828282;
-  padding-top: 60px;
-}
-.footer-info {
-  font-size: 32px;
-  line-height: 44px;
-}
-.footer-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px 16px;
-  margin-bottom: 60px;
-}
-.footer-col {
-  width: calc(50% - 16px);
-}
-.footer-col.col-xs-12 {
-  width: 100%;
-}
-.footer-col-info {
-  color: white;
-  font-size: 16px;
-  line-height: 22px;
-}
-.footer-col-title {
-  line-height: 22px;
-}
-.footer-middle-text {
-  margin-bottom: 60px;
-}
-.text-secondary {
-  color: $grey;
-}
-.footer-col-info {
-  margin-top: 8px;
-}
-.footer-col-info a {
-  color: $white;
-}
-.footer-bottom {
-  margin-bottom: 50px;
-}
-.footer-bottom li  {
-  min-width: auto;
-  margin: 0 16px 16px 0;
-  line-height: 20px;
-}
-.footer-bottom-item {
-  margin-top: 24px;
-}
-.footer-bottom-item:last-child {
-  margin-top: 12px;
 }

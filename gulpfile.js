@@ -5,8 +5,6 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     rigger = require('gulp-rigger'),
     minify = require('gulp-minify'),
-    // cleanCss = require('gulp-clean-css'),
-    prefixer = require('gulp-autoprefixer'),
     browserSync = require("browser-sync").create(),
     sourcemaps = require('gulp-sourcemaps');
     const fileinclude = require('gulp-file-include');
@@ -73,22 +71,7 @@ function styles() {
       sourceMap: true,
       errLogToConsole: true
     }))
-    .pipe(prefixer({
-      browsers: [
-          'ie >= 10',
-          'ie_mob >= 10',
-          'ff >= 30',
-          'chrome >= 34',
-          'safari >= 7',
-          'opera >= 23',
-          'ios >= 6',
-          'android >= 4.4',
-          'bb >= 10'
-      ],
-      cascade: false
-    }))
     .pipe(sourcemaps.write())
-    // .pipe(cleanCss())
     .pipe(plumber.stop())
     .pipe(gulp.dest(path.build.css))
     .pipe(browserSync.stream());
