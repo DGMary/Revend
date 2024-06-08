@@ -49,3 +49,33 @@ function playVideo() {
     $('#video').attr("controls","controls");
   });
 }
+
+window.addEventListener('load', function() {
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 1.22,
+    spaceBetween: 16,
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 16
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      }
+    }
+  });
+})

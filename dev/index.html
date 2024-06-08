@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link href="./css/main.css" rel="stylesheet">
 </head>
 <body class="body">
@@ -567,43 +568,6 @@
     </div>
   </div>
 </div>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script defer>
-  window.addEventListener('load', function() {
-    const swiper = new Swiper('.swiper', {
-      slidesPerView: 1.22,
-      spaceBetween: 16,
-      direction: 'horizontal',
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 16
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 16,
-        },
-        1200: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        }
-      }
-    });
-  })
-</script>
-
     <div class="section section-contacts">
   <div class="container">
     <div class="section-content-holder">
@@ -689,6 +653,7 @@
     </div>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/libs-min.js"></script>
 <script src="../js/main-min.js"></script>  
 </body>
