@@ -122,6 +122,7 @@
 .footer-info {
   font-size: 32px;
   line-height: 44px;
+  max-width: 353px;
 }
 .footer-row {
   display: flex;
@@ -142,6 +143,7 @@
 }
 .footer-col-title {
   line-height: 22px;
+  font-size: 16px;
 }
 .footer-middle-text {
   margin-bottom: 60px;
@@ -168,4 +170,35 @@
 }
 .footer-bottom-item:last-child {
   margin-top: 12px;
+}
+@media(min-width: $xl) {
+  .footer-top {
+    margin-bottom: 145px;
+  }
+  .footer-content {
+    padding-top: 80px;
+  }
+  .footer-info {
+    margin-left: calc(50% + 16px);
+  }
+  .footer-col.col-xs-12,
+  .footer-col {
+    width: calc(25% - 8px);
+  }
+  .footer-middle-text {
+    margin-bottom: 124px;
+  }
+  .footer-row {
+    margin-bottom: 120px;
+  }
+  .footer-bottom li {
+    margin-bottom: 0;
+  }
+  .footer-bottom-item,
+  .footer-bottom-item:last-child {
+    margin-top: 0;
+  }
+  .footer-bottom-item:last-child {
+    margin-left: 46px;
+  }
 }
