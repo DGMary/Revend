@@ -1,0 +1,44 @@
+.section-subtitle-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: $grey;
+  display: flex;
+  flex-direction: column;
+}
+.section-subtitle-picture {
+ margin-bottom: 12px;
+}
+.section-about .section-content {
+  margin-top: 42px;
+}
+.section .btn-width-auto {
+  width: auto;
+}
+.section-btn-align-left {
+  text-align: left;
+} 
+.section-subtitle-text {
+  font-family: $ftManrope;
+  font-weight: 400;
+}
+.section-about .section-text {
+  margin-bottom: 16px;
+}
+@media(min-width: $xl) {
+  .section-about .section-subtitle {
+    margin-top: 0;
+  }
+  .section-about .section-content .section-subtitle {
+    line-height: 37px;
+  }
+  .section-about .section-content {
+    margin-top: 0;
+  }
+  .section-about .section-title {
+    line-height: 1;
+  }
+  .section-about .section-btn {
+    margin-top: 0;
+  }
+}
