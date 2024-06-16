@@ -1,0 +1,85 @@
+.section-inner-indent {
+  margin: 60px 0;
+}
+.align-center {
+  text-align: center;
+}
+.section-hero .section-text {
+  margin-bottom: 20px;
+} 
+.section-hero .section-title {
+  max-width: 802px;
+  margin: 0 auto;
+} 
+.hero-advantages {
+  margin: 40px 0 58px;
+}
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.advantages-list-item {
+  position: relative;
+  padding-left: 32px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.advantages-list-item:before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  background-image: url(../../img/icons/icon-ckeck.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.jc-center {
+  justify-content: center;
+}
+.hero-brands {
+  margin: 60px 0;
+}
+.brands-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.brands-list-item {
+  width: calc(50% - 4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 600px) {
+  .brands-list-item {
+    width: calc((100% - 16px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    align-items: center;
+    justify-content: center;
+  }
+  .brands-list {
+    gap: 16px;
+  }
+  .brands-list-item {
+    width: calc((100% - 80px) /6);
+  }
+  .hero-brands,
+  .section-inner-indent {
+    margin: 100px 0;
+  }
+  .section-hero .section-title {
+    line-height: 1;
+  }
+}
